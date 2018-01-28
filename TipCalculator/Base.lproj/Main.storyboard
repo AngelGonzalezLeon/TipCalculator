@@ -60,11 +60,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="vTQ-eG-wX2">
                                 <rect key="frame" x="203" y="89" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="pFq-Cz-JJ3"/>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="HHQ-aa-EhF"/>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="IXe-iE-U9P"/>
                                 </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="TmD-By-9pm">
@@ -78,7 +80,7 @@
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
-                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="CPN-Rl-LHx"/>
+                                    <action selector="calcTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="OD6-sh-ngi"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -90,7 +92,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Jtl-ve-tuZ"/>
                     <connections>
-                        <outlet property="billLabel" destination="vTQ-eG-wX2" id="H8v-Wn-UEn"/>
+                        <outlet property="billField" destination="vTQ-eG-wX2" id="7IY-qh-aUU"/>
                         <outlet property="tipControl" destination="TmD-By-9pm" id="hPT-4i-WmY"/>
                         <outlet property="tipLabel" destination="EEu-RE-7hH" id="cml-Dh-ouG"/>
                         <outlet property="totalLabel" destination="0bk-Ub-vb0" id="bOp-5J-DPe"/>
